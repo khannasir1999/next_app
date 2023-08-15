@@ -1,7 +1,7 @@
 'use client'
 import React, {useState} from 'react';
 import styles from "@/app/contact/contact.module.css"
-import {Mulish} from "next/font/google";
+import {Mulish} from "@next/font/google";
 const mulish = Mulish({
     weight: ['300','400','500','600','700','800','900','1000'],
     subsets: ['latin'],
