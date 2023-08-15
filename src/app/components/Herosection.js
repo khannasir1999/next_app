@@ -3,12 +3,8 @@ import heroStyles from "@/styles/herosection.module.css"
 import styles from "@/styles/common.module.css"
 import Image from "next/image";
 import Link from "next/link";
-import { Mulish } from 'next/font/google';
-const mulish = Mulish({
-    weight: ['300','400','500','600','700','800','900','1000'],
-    subsets: ['latin'],
-    display: 'swap'
-})
+
+
 const Herosection = ({title,img}) => {
     return (
        <main className={heroStyles.main_section}>
@@ -21,7 +17,7 @@ const Herosection = ({title,img}) => {
                         selection of the latest and greatest movies, and find your new favorite today.
                     </p>
                     <Link href="/movie">
-                        <button className={mulish.className}>
+                        <button>
                             Explore Movies
                         </button>
                     </Link>

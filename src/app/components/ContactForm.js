@@ -1,12 +1,8 @@
 'use client'
 import React, {useState} from 'react';
 import styles from "@/app/contact/contact.module.css"
-import {Mulish} from "next/font/google";
-const mulish = Mulish({
-    weight: ['300','400','500','600','700','800','900','1000'],
-    subsets: ['latin'],
-    display: 'swap'
-})
+
+
 const ContactForm = () => {
 const[user, setUser] = useState({
     username:"",
@@ -66,7 +62,7 @@ return (
                    Enter your name
                    <input type="text" name="username" id="username"
                           placeholder="Enter your name"
-                          className={mulish.className}
+
                           value={user.username}
                           onChange={handleChange}
                           required
@@ -79,7 +75,7 @@ return (
                    Email
                    <input type="text" name="email" id="email"
                           placeholder="Enter your email"
-                          className={mulish.className}
+
                           value={user.email}
                           onChange={handleChange}
                           required
@@ -93,7 +89,7 @@ return (
                    Phone Number
                    <input type="number" name="phone" id="phone"
                           placeholder="Enter your phone"
-                          className={mulish.className}
+
                           value={user.phone}
                           onChange={handleChange}
                           required
@@ -107,7 +103,7 @@ return (
                    Message
                    <textarea  name="message" id="message" rows={5}
                               placeholder="Enter your Message"
-                              className={mulish.className}
+
                               value={user.message}
                               onChange={handleChange}
                               required
@@ -119,7 +115,7 @@ return (
 
                {status === 'success' && <p className={styles.success_msg}>Thank you for your message!</p>}
                {status === 'error' && <p className={styles.error_msg}>There was an error submitting your message. Please try again.</p>}
-               <button type="submit" className={mulish.className}>Send Message</button>
+               <button type="submit">Send Message</button>
            </div>
 
 
