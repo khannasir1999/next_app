@@ -6,7 +6,7 @@ import Footer from "@/app/components/Footer";
 
 
 const mulish = Roboto({
-    weight: ['300','400','500','600','700','800','900','1000'],
+    weight: ['100','300','400','500','700','900'],
     subsets: ['latin'],
     display: 'swap'
 })
