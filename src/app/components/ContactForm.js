@@ -1,8 +1,8 @@
 'use client'
 import React, {useState} from 'react';
 import styles from "@/app/contact/contact.module.css"
-import {Mulish} from "@next/font/google";
-const mulish = Mulish({
+import {Roboto} from "@next/font/google";
+const mulish = Roboto({
     weight: ['300','400','500','600','700','800','900','1000'],
     subsets: ['latin'],
     display: 'swap'

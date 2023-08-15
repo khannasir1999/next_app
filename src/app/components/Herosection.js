@@ -1,10 +1,10 @@
 import React from 'react';
 import heroStyles from "@/styles/herosection.module.css"
 import styles from "@/styles/common.module.css"
-import Image from "next/image";
+import { Roboto } from 'next/font/google'
 import Link from "next/link";
 import { Mulish } from 'next/font/google';
-const mulish = Mulish({
+const mulish = Roboto({
     weight: ['300','400','500','600','700','800','900','1000'],
     subsets: ['latin'],
     display: 'swap'
